@@ -1,0 +1,130 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  body {
+    background: linear-gradient(to bottom , #2f5299, #d2eefc);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #2f5299, #d2eefc);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  
+  .content {
+    display: flex; /*using flexbox properties to create layout*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #fff9c7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex; /* using flebox properties*/
+    flex-direction: column; /* making columns for layout*/
+    justify-content: space-between;
+  }
+
+  .card:nth-of-type(4) {
+    margin-left: 345px; /* add this line to create a gap between King and Jack cards */
+  }
+  
+  
+  .card img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%; /* to adjust cards images' size*/
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+    font-family: Georgia, serif;
+    color: #2f5299;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .card button {
+    display: inline-block;
+    background-color: #2f5299;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+  }
+  
+  .card button:hover {
+    background-color: #18306b;
+  }
+  
+  .cards {
+    display: grid; /* adding grid to create layout */
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 20px;
+   }
+
+ .Ace {
+    background-color: #9db7e5;
+    border: #000 solid 3px;
+    text-align: center;
+    
+ }
+
+ .King {
+    background-color: peachpuff;
+    border: #000 solid 3px;
+    text-align: center;
+ }
+
+ .Queen {
+    background-color:  peachpuff;
+    border: #000 solid 3px;
+    text-align: center;
+ }
+
+ .Jack {
+    background-color: #9db7e5;
+    border: #000 solid 3px;
+    text-align: center;
+ }
+
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px; 
+    height: 30px;
+    border-top: 1px solid #ccc;
+    background: linear-gradient(to bottom, #d2eefc, #2f5299);
+  }
+  
+  
